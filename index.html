@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jana Cake Shop</title>
 
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    
     <!-- Favicon -->
     <link rel="icon" type="images/jpg" href="images/shop-logo.png">
 
@@ -103,6 +106,10 @@
                     </select>
 
                     <button class="btn" onclick="getLocation()">Delivery Location</button>
+                    <p id="location"></p>
+
+                    <label>Choose your location on the map</label>
+                    <div id="map" style="height: 250px; margin: 8px 0;"></div>
                     <p id="location"></p>
 
                     <button class="btn" onclick="addOrder()">Send Order</button>
