@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jana Cake Shop</title>
+    <link rel="stylesheet" href="index-style.css">
+</head>
+<body>
+
+    <!-- Nav bar -->
+    <nav>
+    <span >🧁 Jana-Shop</span>
+    <div class="links">
+      <a href="#home">Home</a>
+      <a href="#menu">Menu</a>
+    </div>
+  </nav>
+
+  <!-- Header -->
+   <header id="home">
+    <h1>The Best Cakes in Jeddah 🍰</h1>
+    <p>Fresh cakes, delivered to your door</p>
+    <a class="btn" href="#menu">View Menu</a>
+  </header>
+
+<div class="layout">
+<img class="cake-img" src="cake-image.png" alt="Cake">
+
+<!-- Main  -->
+<main>
+
+   <section id="menu">
+    <h2>🍰 Our Menu</h2>
+    <div class="cards">
+      <div class="card"><h3>Chocolate Cake</h3><p>45 SAR</p></div>
+      <div class="card"><h3>Strawberry Cake</h3><p>50 SAR</p></div>
+      <div class="card"><h3>Cheesecake</h3><p>55 SAR</p></div>
+      <div class="card"><h3>Carrot Cake</h3><p>40 SAR</p></div>
+    </div>
+  </section>
+
+  <!-- Form -->
+   <section id="order">
+    <h2>📝 Place an Order</h2>
+    <div>
+      <label for="name">Your Name</label>
+      <input type="text" id="name" placeholder="Jana">
+ 
+      <label for="cake">Cake Type</label>
+      <select id="cake">
+        <option>Chocolate Cake</option>
+        <option>Strawberry Cake</option>
+        <option>Cheesecake</option>
+        <option>Carrot Cake</option>
+      </select>
+
+      <button class="btn" onclick="getLocation()">Delivery Location</button>
+      <p id="location"></p>
+ 
+      <button class="btn" onclick="addOrder()">Send Order</button>
+      <h3>My Orders</h3>
+      <ul id="ordersList"></ul>
+    </div>
+  </section>
+    
+  </main>
+</div>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2026 Jana-Shop</p>
+  </footer>
+ 
+  <script src="index-script.js"></script>
+</body>
+</html>
