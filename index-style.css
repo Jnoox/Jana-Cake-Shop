@@ -1,44 +1,66 @@
-
 body {
-  font-family: Arial, sans-serif;   
-  color: #3a2a2f;                    
-  background: #fff0f3;               
-  margin: 20px;
+    font-family: Arial, sans-serif;
+    color: #3a2a2f;
+    background: #fff0f3;
+    margin-top: 0px;
+    margin-left: auto;
+    margin-right: auto;
+    background-image: url('images/pattern.webp');
 }
 
+#mainheader {
+    background: #d6336c;
+}
 
 nav {
-  background: #d6336c; 
-  color: white;
-  padding: 12px;
+    height: 60px;
+    color: white;
+    width: 1000px;
+    margin: 0 auto 20px;
 }
+
 nav a {
-  color: white;
-  margin-left: 15px;
+    color: white;
+    margin-left: 15px;
+} 
+
+#leftmeanu {
+    float: left;
+    width: 30%;
+    margin-bottom: 20px;
+}
+
+.searchbox {
+    padding: 5px;
+    margin: 10px, 10px;
+    width: 200px;
+}
+
+#main {
+    float: right;
+    width: 70%;
+    margin-bottom: 20px
+}
+
+footer {
+    clear: both;
+    width: 100px;
 }
 
 
-h1, h2 { color: #a61e4d; }   
 
-.cake-img {
-  width: 280px;
-  border-radius: 8px;
-}
-
-button, .btn {
-  background: #d6336c;
-  color: white;
-  border: none;
-  padding: 10px 16px;
-  border-radius: 8px;
-  text-decoration: none;
+h1,
+h2 {
+    color: #a61e4d;
 }
 
-.layout {
-  display: flex;
-  gap: 20px;
-  align-items: flex-start;
-}
-.layout main {
-  flex: 1;
-}
+
+button,
+.btn {
+    background: #d6336c;
+    color: white;
+    border: none;
+    padding: 10px 16px;
+    border-radius: 8px;
+    text-decoration: none;
+} 
