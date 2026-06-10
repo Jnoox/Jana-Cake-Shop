@@ -6,10 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Order | Jana Cake Shop</title>
 
-    <!-- Leaflet map -->
-    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
-    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
-
     <!-- Favicon -->
     <link rel="icon" type="image/png" href="images/shop-logo.png">
 
@@ -50,8 +46,6 @@
                         <option>Carrot Cake</option>
                     </select>
 
-                    <button class="btn" onclick="getLocation()">Delivery Location</button>
-                    <p id="location"></p>
 
                     <label>Choose your location on the map</label>
                     <div id="map" style="height: 250px; margin: 8px 0;"></div>
@@ -75,6 +69,10 @@
     </div>
 
     <script src="js/index-script.js"></script>
+    <script
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB41DRUbKWJHPxaFjMAwdrzWzbVKartNGg&callback=initMap&v=weekly"
+      defer
+    ></script>
 </body>
 
 </html>
