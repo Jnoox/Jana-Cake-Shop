@@ -1,15 +1,19 @@
 /* ===== Home page ===== */
-body {
-    font-family: Arial, sans-serif;
-    color: #3a2a2f;
-    background: #fff0f3;
-    margin-top: 0px;
-    margin-left: auto;
-    margin-right: auto;
-    background-image: url('images/pattern.webp');
+:root {
+    --pink:      #d6336c;
+    --pink-dark: #a61e4d;
+    --bg:        #fff0f3;
+    --text:      #3a2a2f;
 }
 
-#mainheader {
+body {
+    font-family: Arial, sans-serif;
+    color: var(--text);
+    background-color: var(--bg);
+    background-image: url('../images/pattern.webp');
+}
+
+/* #mainheader {
     background: #d6336c;
 }
 
@@ -46,14 +50,23 @@ nav a {
 footer {
     clear: both;
     width: 100px;
+} */
+
+
+h1, h2, h3 { 
+    color: var(--pink-dark); 
 }
 
-
-
-h1,
-h2 {
-    color: #a61e4d;
+#mainheader {
+    background-color: var(--pink) !important;
 }
+
+#mainheader .navbar-brand img { height: 45px; }
+
+#mainheader .nav-link,
+#mainheader .navbar-brand { color: #fff !important; }
+
+#mainheader .nav-link:hover { opacity: 0.8; }
 
 
 button,
@@ -124,4 +137,146 @@ button,
 .item .desc {
     color: #3a2a2f;
     line-height: 1.6;
+}
+
+/* ===== Navbar Bootstrap  ===== */
+#mainheader {
+    background-color: var(--pink) !important;
+}
+
+#mainheader .navbar-brand img { height: 45px; }
+
+#mainheader .nav-link,
+#mainheader .navbar-brand { color: #fff !important; }
+
+#mainheader .nav-link:hover { opacity: 0.8; }
+
+
+
+/* ===== map button Bootstrap ===== */
+.btn-pink {
+    background-color: var(--pink);
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    padding: 10px 20px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: background 0.2s;
+}
+.btn-pink:hover {
+    background-color: var(--pink-dark);
+    color: #fff;
+}
+
+/* ===== Menu cards Bootstrap ===== */
+.cake-card {
+    border: none;
+    border-radius: 12px;
+    overflow: hidden;
+    transition: transform 0.2s, box-shadow 0.2s;
+    text-decoration: none;
+    color: var(--text);
+}
+.cake-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 20px rgba(214, 51, 108, 0.2);
+    color: var(--text);
+}
+.cake-card img {
+    height: 180px;
+    object-fit: cover;
+    width: 100%;
+}
+.cake-card .price {
+    color: var(--pink);
+    font-weight: 700;
+    font-size: 1.1rem;
+}
+
+/* ===== Single cake item page Bootstrap ===== */
+.item-card {
+    background: #fff;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 4px 20px rgba(214, 51, 108, 0.15);
+    max-width: 500px;
+    margin: 0 auto;
+}
+.item-card img {
+    width: 100%;
+    height: 280px;
+    object-fit: cover;
+}
+.item-card .price {
+    color: var(--pink);
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+/* ===== Searchbox Bootstrap ===== */
+.searchbox {
+    border: 2px solid var(--pink);
+    border-radius: 8px;
+    padding: 8px 16px;
+    width: 100%;
+    max-width: 400px;
+    outline: none;
+}
+.searchbox:focus { box-shadow: 0 0 0 3px rgba(214,51,108,0.15); }
+
+/* ===== Footer Bootstrap ===== */
+footer {
+    background-color: var(--pink);
+    color: #fff;
+    padding: 20px 0;
+    margin-top: 40px;
+    text-align: center;
+}
+footer a, footer address { color: #fff; font-style: normal; }
+
+.promo-card {
+    display: flex;
+    align-items: center;
+    background: #fff;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 4px 20px rgba(214, 51, 108, 0.18);
+    max-width: 520px;
+    border: 2px solid rgba(214, 51, 108, 0.12);
+}
+.promo-card img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    flex-shrink: 0;
+}
+.promo-body {
+    padding: 20px 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+.promo-badge {
+    display: inline-block;
+    background: var(--bg);
+    color: var(--pink-dark);
+    font-size: 0.75rem;
+    font-weight: 700;
+    padding: 3px 10px;
+    border-radius: 20px;
+    border: 1px solid var(--pink);
+    width: fit-content;
+}
+.promo-title {
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: var(--text);
+    margin: 0;
+}
+.promo-price { color: #666; font-size: 0.9rem; margin: 0; }
+
+@media (max-width: 480px) {
+    .promo-card { flex-direction: column; }
+    .promo-card img { width: 100%; height: 180px; }
 }
