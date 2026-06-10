@@ -35,3 +35,16 @@ function addOrder() {
  
   document.getElementById("name").value = ""; // clear the name field
 }
+
+function searchCakes() {
+  const text = document.getElementById("search").value.toLowerCase();
+  const cards = document.querySelectorAll(".card");
+ 
+  cards.forEach(function (card) {
+    if (card.textContent.toLowerCase().includes(text)) {
+      card.style.display = "";      
+    } else {
+      card.style.display = "none";  
+    }
+  });
+}

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu | Jana Cake Shop</title>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="images/shop-logo.png">
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- header & Navbar -->
+    <header id="mainheader">
+        <nav>
+            <img src="images/shop-logo.png" alt="logo" height="55" />
+            <div class="links">
+                <a href="index.html">Home</a>
+                <a href="menu.html">Menu</a>
+                <a href="order.html">Order</a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- layout -->
+    <div style="width:1000px;margin-left: auto;margin-right: auto;">
+
+        <main id="main">
+
+            <!-- Search box (id + onkeyup are required) -->
+            <input type="search" id="search" class="searchbox"
+                   placeholder="Search our store" onkeyup="searchCakes()" />
+
+            <!-- Menu -->
+            <section id="menu">
+                <h2>🍰 Our Menu</h2>
+                <div class="cards">
+
+                    <a class="card" href="chocolate.html">
+                        <img src="images/chocolate_cake.jpg" alt="Chocolate Cake" />
+                        <h3>Chocolate Cake</h3>
+                        <p>45 SAR</p>
+                    </a>
+
+                    <a class="card" href="strawberry.html">
+                        <img src="images/Strawberry-Cake.jpg" alt="Strawberry Cake" />
+                        <h3>Strawberry Cake</h3>
+                        <p>50 SAR</p>
+                    </a>
+
+                    <a class="card" href="cheesecake.html">
+                        <img src="images/cheese-cake.jpeg" alt="Cheesecake" />
+                        <h3>Cheesecake</h3>
+                        <p>55 SAR</p>
+                    </a>
+
+                    <a class="card" href="carrot.html">
+                        <img src="images/carrot-cake.jpg" alt="Carrot Cake" />
+                        <h3>Carrot Cake</h3>
+                        <p>40 SAR</p>
+                    </a>
+
+                </div>
+            </section>
+
+        </main>
+
+        <!-- Footer content -->
+        <footer>
+            <p>Our address is
+            <address>Jana Cake Shop - Bakery Street 555 Jeddah </address>
+            </p>
+            <small>© 2026 Jana Cake Shop</small>
+        </footer>
+    </div>
+
+    <script src="js/index-script.js"></script>
+
+</body>
+
+</html>

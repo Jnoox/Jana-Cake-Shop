@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order | Jana Cake Shop</title>
+
+    <!-- Leaflet map -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="images/shop-logo.png">
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- header & Navbar -->
+    <header id="mainheader">
+        <nav>
+            <img src="images/shop-logo.png" alt="logo" height="55" />
+            <div class="links">
+                <a href="index.html">Home</a>
+                <a href="menu.html">Menu</a>
+                <a href="order.html">Order</a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- layout -->
+    <div style="width:1000px;margin-left: auto;margin-right: auto;">
+
+        <main id="main">
+
+            <!-- Order form -->
+            <section id="order">
+                <h2>📝 Place an Order</h2>
+                <div>
+                    <label for="name">Your Name</label>
+                    <input type="text" id="name" placeholder="Jana">
+
+                    <label for="cake">Cake Type</label>
+                    <select id="cake">
+                        <option>Chocolate Cake</option>
+                        <option>Strawberry Cake</option>
+                        <option>Cheesecake</option>
+                        <option>Carrot Cake</option>
+                    </select>
+
+                    <button class="btn" onclick="getLocation()">Delivery Location</button>
+                    <p id="location"></p>
+
+                    <label>Choose your location on the map</label>
+                    <div id="map" style="height: 250px; margin: 8px 0;"></div>
+                    <p id="map-location"></p>
+
+                    <button class="btn" onclick="addOrder()">Send Order</button>
+                    <h3>My Orders</h3>
+                    <ul id="ordersList"></ul>
+                </div>
+            </section>
+
+        </main>
+
+        <!-- Footer content -->
+        <footer>
+            <p>Our address is
+            <address>Jana Cake Shop - Bakery Street 555 Jeddah </address>
+            </p>
+            <small>© 2026 Jana Cake Shop</small>
+        </footer>
+    </div>
+
+    <script src="js/index-script.js"></script>
+</body>
+
+</html>
